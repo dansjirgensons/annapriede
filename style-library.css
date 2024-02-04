@@ -14,7 +14,7 @@ html {
 
 ::selection {
   color: black;
-  background: lightyellow;
+  background: #ffffe0;
 }
 
 body,
