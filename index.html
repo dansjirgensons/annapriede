@@ -75,27 +75,32 @@
     </div>
 
     <script src="arena.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          var aboutButtons = document.querySelectorAll('.aboutbutton');
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var aboutButtons = document.querySelectorAll('.aboutbutton');
 
-          aboutButtons.forEach(function (aboutButton) {
-              aboutButton.addEventListener('click', function () {
-                  document.getElementById('about').classList.toggle('hidden');
-              });
-          });
+        aboutButtons.forEach(function (aboutButton) {
+            aboutButton.addEventListener('click', function () {
+                document.getElementById('about').classList.toggle('hidden');
+            });
+        });
 
-          // Event delegation for dynamically added images
-          document.getElementById('content').addEventListener('click', function (event) {
-              const target = event.target;
+        // Event delegation for dynamically added images
+        document.getElementById('content').addEventListener('click', function (event) {
+            const target = event.target;
 
-              if (target.tagName === 'IMG' && target.closest('.block')) {
-                  const block = target.closest('.block');
-                  block.classList.toggle("expand");
-              }
-          });
-      });
+            if (target.tagName === 'IMG' && target.closest('.block')) {
+                const block = target.closest('.block');
+                block.classList.toggle("expand");
+            }
+        });
 
-  </script>
+        // Toggle 'hidden' class when #about is clicked
+        document.getElementById('about').addEventListener('click', function () {
+            this.classList.toggle('hidden');
+        });
+    });
+</script>
+
   </body>
 </html>

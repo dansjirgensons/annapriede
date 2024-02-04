@@ -73,7 +73,7 @@ a:hover {
 
 .aboutbutton {
   cursor: help;
-  display: inline-block;
+  /* display: inline-block; */
   user-select: none;
 }
 .aboutbutton:hover {
@@ -87,7 +87,8 @@ font-style:italic;
     top: 0; */
 }
 #about {
-  cursor: default;
+  cursor: help;
+  user-select: none;
 }
 .grid-container {
   display: grid;

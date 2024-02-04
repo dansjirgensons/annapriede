@@ -32,6 +32,23 @@
     </div>
 
     <script src="arena-library.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var aboutButtons = document.querySelectorAll('.aboutbutton');
   
+        
+  
+          // Event delegation for dynamically added images
+          document.getElementById('content').addEventListener('click', function (event) {
+              const target = event.target;
+  
+              if (target.tagName === 'IMG' && target.closest('.block')) {
+                  const block = target.closest('.block');
+                  block.classList.toggle("expand");
+              }
+          });
+  
+      });
+  </script>
   </body>
 </html>
