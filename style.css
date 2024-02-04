@@ -12,7 +12,8 @@ html {
 
 ::selection {
   color: black;
-  background: #ffffe0;
+  /* background: #ffffe0; */
+  background: rgb(255 255 224 / 99%);
 }
 
 body,
