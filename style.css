@@ -42,6 +42,7 @@ svg {
 
 img {
   cursor:zoom-in;
+  user-select:none;
 }
 .expand img {
   cursor:zoom-out;
@@ -66,6 +67,7 @@ a:hover {
   width: 25%;
   /* padding: 3% 3%; */
   padding-bottom: 1rem;
+  cursor:default;
 }
 .hidden {
   display: none;

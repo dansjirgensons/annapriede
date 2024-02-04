@@ -63,6 +63,7 @@ a:hover {
   width: 33.333%;
   padding:5%;
   text-align:center;
+  cursor:default;
 }
 
 .picture {
