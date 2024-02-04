@@ -112,6 +112,7 @@ header {
 @media only screen and (min-width: 901px) {
   img {
     cursor:zoom-in;
+    user-select:none;
   }
 .expand {
   width:100vw;
