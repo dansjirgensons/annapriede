@@ -62,6 +62,14 @@ a:hover {
 .block {
   width: 33.333%;
   padding:5%;
+  text-align:center;
+}
+
+.picture {
+  margin:0 auto;
+}
+.block-title {
+  margin-top:1rem;
 }
 .hidden {
   display: none;
