@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  color: black;
+  background: lightyellow;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  overflow-wrap: break-word;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+a:hover {
+  font-weight: bold;
+  cursor: alias;
+}
+
+#blockspace {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block {
+  width: 25%;
+  /* padding: 3% 3%; */
+  padding-bottom: 1rem;
+}
+.hidden {
+  display: none;
+}
+
+.aboutbutton {
+  cursor: help;
+  display: inline-block;
+  user-select: none;
+}
+
+#about {
+  /* height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: lightyellow;
+    top: 0; */
+}
+#about {
+  cursor: default;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns with each taking 25% */
+  align-items: end;
+}
+.grid-item {
+  /* background-color: grey; */
+  padding-right: 10%;
+}
+
+#about {
+    padding-bottom:1rem;
+    padding-top:1rem;
+  }
+
+  header {
+    position:sticky;
+    top:0;
+    background:white;
+  }
+
+
+
+@media only screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+    }
+    .block {
+        width: 50%;
+      }
+
+    }
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

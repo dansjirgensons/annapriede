@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Anna Priede</title>
+  </head>
+  <body>
+
+    <template id="blockTemplate">
+      <div class="block">
+        <img src="" class="picture" />
+        <div class="block-title"></div>
+        <p class="block-description"></p>
+      </div>
+    </template>
+
+    <header>
+      <div class="aboutbutton">Anna Priede</div>
+
+    <div id="about" class="hidden">
+      <!-- <div class="aboutbutton">Anna Priede</div> -->
+      <div class="grid-container">
+        <div class="grid-item">b. 1999, it's about understanding the material and the cutting process, and knowing which shapes and angles will work. based in rīga, latvia
+        </div>
+        <div class="grid-item">currently: making books and studying sculpture at Latvian Art Academy of Arts.</div>
+        <div class="grid-item"><a href="/library">design library</a></div>
+        <div class="grid-item"><a href="mailto:annapriede1999@gmail.com">e-mail</a>, <a href="https://instagram.com/annaprie.de">instagram</a>, <a href="https://are.na/anna-priede">are.na</a></div>
+        <!-- Add more grid items as needed -->
+      </div>
+    </div>
+  </header>
+
+    <div id="content">
+      <div id="blockspace"></div>
+    </div>
+
+    <script src="arena.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var aboutButtons = document.querySelectorAll('.aboutbutton');
+  
+        aboutButtons.forEach(function(aboutButton) {
+          aboutButton.addEventListener('click', function() {
+            document.getElementById('about').classList.toggle('hidden');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
