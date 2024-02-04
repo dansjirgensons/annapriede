@@ -70,7 +70,9 @@ a:hover {
   display: inline-block;
   user-select: none;
 }
-
+.aboutbutton:hover {
+font-style:italic;
+}
 #about {
   /* height: 100vh;
     width: 100vw;
