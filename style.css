@@ -43,6 +43,7 @@ svg {
 img {
   cursor:zoom-in;
   user-select:none;
+  -webkit-user-select: none;
 }
 .expand img {
   cursor:zoom-out;
@@ -77,6 +78,7 @@ a:hover {
   cursor: help;
   /* display: inline-block; */
   user-select: none;
+  -webkit-user-select: none;
 }
 .aboutbutton:hover {
 font-style:italic;
@@ -91,6 +93,7 @@ font-style:italic;
 #about {
   cursor: help;
   user-select: none;
+  -webkit-user-select: none;
 }
 .grid-container {
   display: grid;
