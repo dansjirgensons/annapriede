@@ -125,3 +125,17 @@ font-style:italic;
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+
+@media (prefers-color-scheme: dark) {
+html {
+  background:black;
+  color:white;
+}
+a {
+  color:white;
+}
+header {
+  background:black;
+}
+}
