@@ -55,7 +55,7 @@ a:hover {
 #blockspace {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -130,6 +130,19 @@ header {
 .centertitle {
   text-align:center;
 }
+
+@media only screen and (min-width: 901px) {
+.block {
+  transition:all 0.5s ease;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  -o-transition:all 0.5s ease;
+}
+.picture {
+  max-height:100vh;
+}
+}
+
 @media only screen and (max-width: 900px) {
     .block {
         width: 50%;
